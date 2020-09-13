@@ -110,6 +110,7 @@ class SOTE(object):
         event_height = np.where(rand <= self.par['rain_prob']*self.par['dt'],
                                 np.random.exponential(self.par['mean_height'], size = self.par['runs']), 0)
         self.rain_rate = event_height/self.par['dt']
+        # account for infiltration excess runoff
         self.rain_rate = np.where(self.rain_rate>self.Ksat, self.Ksat, self.rain_rate)
 
     def water_loss(self, s, C):
