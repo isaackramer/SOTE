@@ -66,7 +66,7 @@ for tim in time[1:]:
     eq.derivs()
     new_values = eq.rk4_step([q, E, s])
     q, E, s = new_values[0,:]
-    # water content must be less than 1 (saturation excess)
+    # water content must be less than 1 (saturation excess runoff)
     s = np.where(s > 1.0, 1.0, s)
     w = s*eq.soil_parms['nZr']
 
