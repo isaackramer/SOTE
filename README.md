@@ -1,6 +1,6 @@
 # Guide to Python code for SOTE model
 
-The code contained in this repository corresponds to the SOTE model, as described in Kramer & Mau (2020) (LINK).
+The code contained in this repository corresponds to the SOTE model, as described in Kramer & Mau (2020). Click [here](https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2020WR027456) for the corresponding article in Water Resources Research.
 
 1. In order to run the code, execute SOTE_script.py
 
